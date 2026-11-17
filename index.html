@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QR-Codes f&uuml;r Links und Texte erstellen und als PNG speichern.">
+    <title>QR Studio &mdash; QR Code Generator</title>
+    <link rel="stylesheet" href="style.css?v=20261117-3">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <header class="brand">
+            <span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h6v6H3zM15 3h6v6h-6zM3 15h6v6H3zM15 15h3v3h3v3h-6z"/></svg></span>
+            <span>QR Studio<span class="brand-subtitle">KLEINER CODE. VIELE M&Ouml;GLICHKEITEN.</span></span>
+        </header>
+        <div class="info">
+            <span class="eyebrow">DEIN LINK ZUM MITNEHMEN</span>
+            <h1>Einfach teilen.<br>Mit einem Scan.</h1>
+            <p>Mach aus deinem Text oder Link einen QR-Code. Erstellen, herunterladen, weitergeben.</p>
+        </div>
+        <form>
+            <label for="qr-input">Was m&ouml;chtest du teilen?</label>
+            <input id="qr-input" required type="text" placeholder="https://deine-website.de" aria-describedby="input-hint">
+            <p id="input-hint" class="input-hint">Ein Link, eine Nachricht oder einfach ein bisschen Text.</p>
+            <button type="submit">QR Code erstellen</button>
+        </form>
+        <p class="status" role="status" aria-live="polite"></p>
+        <div class="qr-code hidden">
+            <div class="result-heading"><span class="result-dot" aria-hidden="true"></span> Bereit zum Teilen</div>
+            <div class="image-frame"><img alt="Generierter QR-Code" width="150" height="150"></div>
+            <p class="scan-hint">Kamera &ouml;ffnen. Scannen. Fertig.</p>
+            <button class="download" type="button">PNG herunterladen</button>
+        </div>
+        <footer><span class="footer-mark" aria-hidden="true">&nearr;</span> Ohne Anmeldung. Direkt als PNG.
+            <span class="privacy">Deine Eingabe wird zur Erstellung an QRServer gesendet.</span>
+        </footer>
+    </main>
+    <script src="script.js?v=20261117-2"></script>
+</body>
+</html>
